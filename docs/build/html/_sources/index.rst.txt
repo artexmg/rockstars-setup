@@ -10,6 +10,17 @@ Welcome to rockstars setup's documentation!
    :maxdepth: 2
    :caption: Contents:
 
+   beforeyourbegin
+
+.. toctree::
+   :maxdepth: 2
+   :hidden:
+   :caption: Setting your work environment:
+
+   installputty
+   createsshkey
+
+
 
 
 Indices and tables
