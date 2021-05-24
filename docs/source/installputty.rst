@@ -20,7 +20,7 @@ After you finish installing PuTTY, you should have something similar to this:
 
     Make sure you have PuTTY and PuTTYgen Installed
 
-Make sure that both PuTTY and PuTTYgen were successfully installed. The first one is the client and the second is how we will generate the SSH Keys.
+Make sure that both PuTTY and PuTTYgen were successfully installed. The first one is the ssh client and the second is how we will generate the SSH Keys for authentication.
 
 Creating SSH Keys
 _________________
@@ -46,7 +46,7 @@ Then hit the **Generate** button and keep moving the mouse to induce randomness 
     Keep moving the mouse!
 
 
-once the key is created, you can secure it adding a passphrase (simple put, a password). This is not required, but it is a good practice. Do not forget it as it will be used later in the process to connect to the remote server.
+once the key is created, you can secure it by adding a passphrase (simple put, a password). This is not required, but it is a good practice. Do not forget what the password is, as it will be used later in the process to connect to the remote server.
 
 .. figure:: ./images/keygen_3.png
     :alt: alt textt
@@ -54,3 +54,58 @@ once the key is created, you can secure it adding a passphrase (simple put, a pa
     :scale: 70 %
 
     Enter keypassphrase to protect your ssh key
+
+Now, save the **private key** file. Note that the file extension is *.ppk*
+
+.. figure:: ./images/keygen_4.png
+    :alt: alt textt
+    :align: center
+    :scale: 50 %
+
+    Make sure to keep the file extension as ppk
+    
+Next, we need to select the public key. Right click on the area where the publick key is displayed, and then click *select all* and then copy. Then, open Notepad and paste the value and save it as *.txt* (do not use a different format or the key would be altered).
+
+.. figure:: ./images/keygen_5.png
+    :alt: alt textt
+    :align: center
+    :scale: 50 %
+
+.. figure:: ./images/keygen_6.png
+    :alt: alt textt
+    :align: center
+    :scale: 50 %
+
+    Select and copy your public key
+
+.. admonition:: saving public key file from PuTTYgen
+
+    While there is an option to save a public key file from PuTTYgen, it will modify the format of the file. It is preferable to copy/paste it and save it using Notepad as a text file, as explained above.
+
+
+Configuring SSH Client
+------------------------
+
+Now that you have your SSH Keys public and private in place, we can configure our client by starting PuTTY. You should see the PuTTY Configuration window.
+
+Go to Category -> Session and enter *Host Name (or IP address)* as indicated by your instructor. Also, give a name to *Saved Sessions* (e.g. RockstarsG6) and hit Save button. You should see something similar to the image below
+
+.. figure:: ./images/putty_1.png
+    :alt: alt textt
+    :align: center
+    :scale: 70 %
+
+    Enter Hostname and a name for your session. Hit Save button.
+
+Then move to Category -> *Connection* -> *Auth* and click the button *Browse*. Here you will enter the private key file that you saved in the previous section. Be sure that it is the one with extension *ppk*.
+
+.. figure:: ./images/putty_2.png
+    :alt: alt textt
+    :align: center
+    :scale: 70 %
+
+    Select Private Key file saved before.
+
+These are all the configurations that we would need to make PuTTY work, but you may want to customized it further to have a better experience using the console. This link `improve putty settings on windows <https://www.linux.com/training-tutorials/improving-putty-settings-windows/#:~:text=Choose%20a%20good%20font.,Lucida%20Console%2C%209%2Dpoint.>`_ could help you to do so.
+
+Now that you have all the files ready, the next step would be connecting to the remote server. Do not close PuTTY!

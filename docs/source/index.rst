@@ -7,7 +7,7 @@
 Before You Begin
 ================
 
-This is a quick setup guide to help you to get your remote system up and running. It is specifically target for Rockstars G6, so if you are following it for a different server it still works, but you will need to teawk the IP address.
+This is a quick setup guide to help you to get your remote system up and running. It is specifically target for Rockstars G6, so if you are following it for a different server it stills works, but you will need to teawk the IP address.
 
 If you have a question, please contact your instructor.
 
@@ -15,7 +15,7 @@ If you have a question, please contact your instructor.
    :maxdepth: 2
    :caption: Contents:
 
-   beforeyoubegin
+   overview
 
 .. toctree::
    :maxdepth: 2
@@ -23,10 +23,8 @@ If you have a question, please contact your instructor.
    :caption: Setting your work environment:
 
    installputty
-   putty
-   createsshkey
-
-
+   connectremote
+   installcode
 
 
 Indices and tables
