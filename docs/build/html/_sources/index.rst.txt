@@ -3,14 +3,29 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to rockstars setup's documentation!
-===========================================
+
+Before You Begin
+================
+
+This is a quick setup guide to help you to get your remote system up and running. It is specifically target for Rockstars G6, so if you are following it for a different server it stills works, but you will need to teawk the IP address.
+
+
+.. |Rockstars| image:: ./images/rockstarslogo.png
+   :scale: 10%
+
+Make sure that you have handy:
+
+* Remote username
+* Remote password
+* Remote IP server or url 
+
+If you have any question, please contact your instructor.
 
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
 
-   beforeyourbegin
+   overview
 
 .. toctree::
    :maxdepth: 2
@@ -18,14 +33,5 @@ Welcome to rockstars setup's documentation!
    :caption: Setting your work environment:
 
    installputty
-   createsshkey
-
-
-
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+   connectremote
+   installcode

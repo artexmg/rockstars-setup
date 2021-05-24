@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
-  <title>Install PuTTY &mdash; rockstars setup  documentation</title>
+  <title>PuTTY (for Windows only) &mdash; rockstars setup  documentation</title>
   
 
   
@@ -41,8 +41,8 @@
     
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Use PuTTYgen" href="createsshkey.html" />
-    <link rel="prev" title="Welcome to rockstars setup’s documentation!" href="index.html" /> 
+    <link rel="next" title="Connect to Remote Server" href="connectremote.html" />
+    <link rel="prev" title="Quick Overview" href="overview.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -87,14 +87,20 @@
               
             
             
-              <p class="caption"><span class="caption-text">Setting your work environment:</span></p>
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="overview.html">Quick Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="overview.html#useful-links">Useful Links</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Setting your work environment:</span></p>
 <ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Install PuTTY</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#download-file-from-internet">download file from internet</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">PuTTY (for Windows only)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#setting-up-ssh-client">Setting up SSH client</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#creating-ssh-keys">Creating SSH Keys</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="#install-puttygen">Install PuTTYgen</a></li>
-<li class="toctree-l1"><a class="reference internal" href="createsshkey.html">Use PuTTYgen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#configuring-ssh-client">Configuring SSH Client</a></li>
+<li class="toctree-l1"><a class="reference internal" href="connectremote.html">Connect to Remote Server</a></li>
 </ul>
 
             
@@ -143,7 +149,7 @@
     
       <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
         
-      <li>Install PuTTY</li>
+      <li>PuTTY (for Windows only)</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -162,19 +168,72 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="install-putty">
-<h1>Install PuTTY<a class="headerlink" href="#install-putty" title="Permalink to this headline">¶</a></h1>
-<p>You need something to start working with PuTTY</p>
-<div class="figure align-default">
-<img alt="_images/2021-05-22_21-46-19.png" src="_images/2021-05-22_21-46-19.png" />
+  <div class="section" id="putty-for-windows-only">
+<h1>PuTTY (for Windows only)<a class="headerlink" href="#putty-for-windows-only" title="Permalink to this headline">¶</a></h1>
+<p><strong>Note:</strong> <em>If you are using MacOSX as a OS, then you don’t need to install PuTTY. Instead you will use the terminal</em></p>
+<p>PuTTY is an SSH and telnet client for Windows, developed originally by Simon Tatham. It is open source  developed and supported by a group of volunteers.</p>
+<p>Download and install PuTTY’s latest version following the instructions from <a class="reference external" href="https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html">here</a></p>
 </div>
-<div class="section" id="download-file-from-internet">
-<h2>download file from internet<a class="headerlink" href="#download-file-from-internet" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="setting-up-ssh-client">
+<h1>Setting up SSH client<a class="headerlink" href="#setting-up-ssh-client" title="Permalink to this headline">¶</a></h1>
+<p>After you finish installing PuTTY, you should have something similar to this:</p>
+<div class="figure align-center" id="id1">
+<a class="reference internal image-reference" href="_images/PuttyInstalled.png"><img alt="alt textt" src="_images/PuttyInstalled.png" style="width: 324.0px; height: 333.0px;" /></a>
+<p class="caption"><span class="caption-text">Make sure you have PuTTY and PuTTYgen Installed</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
+</div>
+<p>Make sure that both PuTTY and PuTTYgen were successfully installed. The first one is the ssh client and the second is how we will generate the SSH Keys for authentication.</p>
+<div class="section" id="creating-ssh-keys">
+<h2>Creating SSH Keys<a class="headerlink" href="#creating-ssh-keys" title="Permalink to this headline">¶</a></h2>
+<p>Before connecting using SSH, you need to create your private and public SSH Keys (refer to <a class="reference external" href="https://www.linode.com/docs/guides/use-public-key-authentication-with-ssh/">Use SSH Public Key Authentication</a> to understand more about SSH Keys)</p>
+<p>Start PuTTYgen and select RSA and change <strong>Number of bits in a generated key</strong> from 2048 to 4094.</p>
+<div class="figure align-center" id="id2">
+<a class="reference internal image-reference" href="_images/keygen_1.png"><img alt="alt textt" src="_images/keygen_1.png" style="width: 420.0px; height: 329.0px;" /></a>
+<p class="caption"><span class="caption-text">Change ‘number of bits in a generated key’ to 4096</span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
+</div>
+<p>Then hit the <strong>Generate</strong> button and keep moving the mouse to induce randomness into the key</p>
+<div class="figure align-center" id="id3">
+<a class="reference internal image-reference" href="_images/keygen_2.png"><img alt="alt textt" src="_images/keygen_2.png" style="width: 422.79999999999995px; height: 331.79999999999995px;" /></a>
+<p class="caption"><span class="caption-text">Keep moving the mouse!</span><a class="headerlink" href="#id3" title="Permalink to this image">¶</a></p>
+</div>
+<p>once the key is created, you can secure it by adding a passphrase (simple put, a password). This is not required, but it is a good practice. Do not forget what the password is, as it will be used later in the process to connect to the remote server.</p>
+<div class="figure align-center" id="id4">
+<a class="reference internal image-reference" href="_images/keygen_3.png"><img alt="alt textt" src="_images/keygen_3.png" style="width: 420.0px; height: 329.0px;" /></a>
+<p class="caption"><span class="caption-text">Enter keypassphrase to protect your ssh key</span><a class="headerlink" href="#id4" title="Permalink to this image">¶</a></p>
+</div>
+<p>Now, save the <strong>private key</strong> file. Note that the file extension is <em>.ppk</em></p>
+<div class="figure align-center" id="id5">
+<a class="reference internal image-reference" href="_images/keygen_4.png"><img alt="alt textt" src="_images/keygen_4.png" style="width: 464.0px; height: 308.0px;" /></a>
+<p class="caption"><span class="caption-text">Make sure to keep the file extension as ppk</span><a class="headerlink" href="#id5" title="Permalink to this image">¶</a></p>
+</div>
+<p>Next, we need to select the public key. Right click on the area where the publick key is displayed, and then click <em>select all</em> and then copy. Then, open Notepad and paste the value and save it as <em>.txt</em> (do not use a different format or the key would be altered).</p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="_images/keygen_5.png"><img alt="alt textt" src="_images/keygen_5.png" style="width: 491.0px; height: 306.0px;" /></a>
+</div>
+<div class="figure align-center" id="id6">
+<a class="reference internal image-reference" href="_images/keygen_6.png"><img alt="alt textt" src="_images/keygen_6.png" style="width: 441.0px; height: 301.0px;" /></a>
+<p class="caption"><span class="caption-text">Select and copy your public key</span><a class="headerlink" href="#id6" title="Permalink to this image">¶</a></p>
+</div>
+<div class="admonition-saving-public-key-file-from-puttygen admonition">
+<p class="admonition-title">saving public key file from PuTTYgen</p>
+<p>While there is an option to save a public key file from PuTTYgen, it will modify the format of the file. It is preferable to copy/paste it and save it using Notepad as a text file, as explained above.</p>
 </div>
 </div>
-<div class="section" id="install-puttygen">
-<h1>Install PuTTYgen<a class="headerlink" href="#install-puttygen" title="Permalink to this headline">¶</a></h1>
-<p>Also, we need to create the files</p>
+</div>
+<div class="section" id="configuring-ssh-client">
+<h1>Configuring SSH Client<a class="headerlink" href="#configuring-ssh-client" title="Permalink to this headline">¶</a></h1>
+<p>Now that you have your SSH Keys public and private in place, we can configure our client by starting PuTTY. You should see the PuTTY Configuration window.</p>
+<p>Go to Category -&gt; Session and enter <em>Host Name (or IP address)</em> as indicated by your instructor. Also, give a name to <em>Saved Sessions</em> (e.g. RockstarsG6) and hit Save button. You should see something similar to the image below</p>
+<div class="figure align-center" id="id7">
+<a class="reference internal image-reference" href="_images/putty_1.png"><img alt="alt textt" src="_images/putty_1.png" style="width: 315.0px; height: 309.4px;" /></a>
+<p class="caption"><span class="caption-text">Enter Hostname and a name for your session. Hit Save button.</span><a class="headerlink" href="#id7" title="Permalink to this image">¶</a></p>
+</div>
+<p>Then move to Category -&gt; <em>Connection</em> -&gt; <em>Auth</em> and click the button <em>Browse</em>. Here you will enter the private key file that you saved in the previous section. Be sure that it is the one with extension <em>ppk</em>.</p>
+<div class="figure align-center" id="id8">
+<a class="reference internal image-reference" href="_images/putty_2.png"><img alt="alt textt" src="_images/putty_2.png" style="width: 313.59999999999997px; height: 306.59999999999997px;" /></a>
+<p class="caption"><span class="caption-text">Select Private Key file saved before.</span><a class="headerlink" href="#id8" title="Permalink to this image">¶</a></p>
+</div>
+<p>These are all the configurations that we would need to make PuTTY work, but you may want to customized it further to have a better experience using the console. This link <a class="reference external" href="https://www.linux.com/training-tutorials/improving-putty-settings-windows/#:~:text=Choose%20a%20good%20font.,Lucida%20Console%2C%209%2Dpoint.">improve putty settings on windows</a> could help you to do so.</p>
+<p>Now that you have all the files ready, the next step would be connecting to the remote server. Do not close PuTTY!</p>
 </div>
 
 
@@ -183,8 +242,8 @@
           </div>
           <footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-        <a href="createsshkey.html" class="btn btn-neutral float-right" title="Use PuTTYgen" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
-        <a href="index.html" class="btn btn-neutral float-left" title="Welcome to rockstars setup’s documentation!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="connectremote.html" class="btn btn-neutral float-right" title="Connect to Remote Server" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="overview.html" class="btn btn-neutral float-left" title="Quick Overview" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
     </div>
 
   <hr/>

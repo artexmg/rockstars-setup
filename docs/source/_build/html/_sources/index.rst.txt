@@ -9,7 +9,17 @@ Before You Begin
 
 This is a quick setup guide to help you to get your remote system up and running. It is specifically target for Rockstars G6, so if you are following it for a different server it stills works, but you will need to teawk the IP address.
 
-If you have a question, please contact your instructor.
+
+.. |Rockstars| image:: ./images/rockstarslogo.png
+   :scale: 10%
+
+Make sure that you have handy:
+
+* Remote username
+* Remote password
+* Remote IP server or url 
+
+If you have any question, please contact your instructor.
 
 .. toctree::
    :maxdepth: 2
@@ -25,11 +35,3 @@ If you have a question, please contact your instructor.
    installputty
    connectremote
    installcode
-
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
