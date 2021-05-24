@@ -1,0 +1,39 @@
+Rockstars Initial Setup
+===========================================
+
+You would need to setup you system properly before continue with assignments.
+
+What you need to do is 
+
+* 1 Install a ssh terminal
+* 2 Generate and setup your public and private SSH Key
+* 3 Install VS Code and setup for remote connection
+* 4 Test your environment
+
+This is a quick reference to guide you to accomplish the above tasks, 
+however it can be done in different ways.  
+
+Quick overview
+----------------
+
+For the first part of this course we are going to be working on a remote server, connected trhough SSH (Secure Socket Shell), using Visual Studio Code (VSCode) as our development platform (IDE).
+
+.. figure:: ./images/RemoteConnection.png
+    :alt: alt text
+    :align: center
+    :scale: 40%
+
+    Remote connection using SSH and Visual Studio Code
+
+The following are a series of steps to get all the subsystems installed and working together. It is a guide for you to get started but it is not a extensive manual that covers all the possibilities and problems that you could encounter during the setup of these tools. 
+
+Useful Links
+--------------
+
+Please, refer to the links in order to gain more knowledge on the specific subjects.
+
+`How does SSH Work <https://www.hostinger.com/tutorials/ssh-tutorial-how-does-ssh-work>`_
+
+`Use SSH Publick Key authentication on Linux, MacOS and Windows <https://www.linode.com/docs/guides/use-public-key-authentication-with-ssh/>`_
+
+

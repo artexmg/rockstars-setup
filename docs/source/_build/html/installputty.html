@@ -1,0 +1,254 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>PuTTY (for Windows only) &mdash; rockstars setup  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Use PuTTYgen" href="createsshkey.html" />
+    <link rel="prev" title="Before you begin" href="beforeyoubegin.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> rockstars setup
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="beforeyoubegin.html">Before you begin</a></li>
+<li class="toctree-l1"><a class="reference internal" href="beforeyoubegin.html#quick-overview">Quick overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="beforeyoubegin.html#useful-links">Useful Links</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Setting your work environment:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">PuTTY (for Windows only)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#creating-ssh-keys">Creating SSH Keys</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id1">Creating SSH Keys</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="createsshkey.html">Use PuTTYgen</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">rockstars setup</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>PuTTY (for Windows only)</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/installputty.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="putty-for-windows-only">
+<h1>PuTTY (for Windows only)<a class="headerlink" href="#putty-for-windows-only" title="Permalink to this headline">¶</a></h1>
+<p><strong>Note:</strong> <em>If you are using MacOSX as a OS, then you don’t need to install PuTTY. Instead you will use the terminal</em></p>
+<p>PuTTY is an SSH and telnet client for Windows, developed originally by Simon Tatham. It is open source  developed and supported by a group of volunteers.</p>
+<p>Download and install PuTTY’s latest version following the instructions from <a class="reference external" href="https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html">here</a></p>
+</div>
+<div class="section" id="creating-ssh-keys">
+<h1>Creating SSH Keys<a class="headerlink" href="#creating-ssh-keys" title="Permalink to this headline">¶</a></h1>
+<p>After you finish installing PuTTY, you should have something similar to this:</p>
+<div class="figure align-center" id="id2">
+<a class="reference internal image-reference" href="_images/PuttyInstalled.png"><img alt="alt textt" src="_images/PuttyInstalled.png" style="width: 324.0px; height: 333.0px;" /></a>
+<p class="caption"><span class="caption-text">Make sure you have PuTTY and PuTTYgen Installed</span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
+</div>
+<p>Make sure that both PuTTY and PuTTYgen were successfully installed. The first one is the client and the second is how we will generate the SSH Keys.</p>
+<div class="section" id="id1">
+<h2>Creating SSH Keys<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<p>Before connecting using SSH, you need to create your private and public SSH Keys (refer to <a class="reference external" href="https://www.linode.com/docs/guides/use-public-key-authentication-with-ssh/">Use SSH Public Key Authentication</a> to understand more about SSH Keys)</p>
+<p>Start PuTTYgen and select RSA and change <strong>Number of bits in a generated key</strong> from 2048 to 4094.</p>
+<div class="figure align-center" id="id3">
+<a class="reference internal image-reference" href="_images/keygen_1.png"><img alt="alt textt" src="_images/keygen_1.png" style="width: 420.0px; height: 329.0px;" /></a>
+<p class="caption"><span class="caption-text">Change ‘number of bits in a generated key’ to 4096</span><a class="headerlink" href="#id3" title="Permalink to this image">¶</a></p>
+</div>
+<p>Then hit the <strong>Generate</strong> button and keep moving the mouse to induce randomness into the key</p>
+<div class="figure align-center" id="id4">
+<a class="reference internal image-reference" href="_images/keygen_2.png"><img alt="alt textt" src="_images/keygen_2.png" style="width: 422.79999999999995px; height: 331.79999999999995px;" /></a>
+<p class="caption"><span class="caption-text">Keep moving the mouse!</span><a class="headerlink" href="#id4" title="Permalink to this image">¶</a></p>
+</div>
+<p>once the key is created, you can secure it adding a passphrase (simple put, a password). This is not required, but it is a good practice. Do not forget it as it will be used later in the process to connect to the remote server.</p>
+<div class="figure align-center" id="id5">
+<a class="reference internal image-reference" href="_images/keygen_3.png"><img alt="alt textt" src="_images/keygen_3.png" style="width: 420.0px; height: 329.0px;" /></a>
+<p class="caption"><span class="caption-text">Enter keypassphrase to protect your ssh key</span><a class="headerlink" href="#id5" title="Permalink to this image">¶</a></p>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="createsshkey.html" class="btn btn-neutral float-right" title="Use PuTTYgen" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="beforeyoubegin.html" class="btn btn-neutral float-left" title="Before you begin" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, Artemio Mendoza.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

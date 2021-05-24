@@ -1,0 +1,26 @@
+
+PuTTY (for Windows only)
+-------------------------
+
+**Note:** *If you are using MacOSX as a OS, then you don't need to install PuTTY. Instead you will use the terminal*
+
+PuTTY is an SSH and telnet client for Windows, developed originally by Simon Tatham. It is open source  developed and supported by a group of volunteers. 
+
+Download and install the latest version from from `here <https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html>`_ following the instructions
+
+We will need to start 
+
+You need something to start working with PuTTY
+
+download file from internet
+----------------------------
+HOw oes it work
+
+THis is another leverl
+-------------------------
+asdfasd
+
+Install PuTTYgen
+==================
+
+Also, we need to create the files

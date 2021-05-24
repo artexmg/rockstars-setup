@@ -1,0 +1,4 @@
+{
+    "restructuredtext.confPath": "${workspaceFolder}/docs/source",
+    "python.pythonPath": "/Users/amendoza/anaconda3/envs/irock/bin/python"
+}
