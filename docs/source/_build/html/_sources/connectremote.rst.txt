@@ -1,4 +1,4 @@
-Connect to Remote Server
+Connect to the remote server
 ==================
 
 Once everything is setup, it is time to connect to the remote server.
