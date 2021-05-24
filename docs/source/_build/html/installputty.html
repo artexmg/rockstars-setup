@@ -96,8 +96,8 @@
 <p class="caption"><span class="caption-text">Setting your work environment:</span></p>
 <ul class="current">
 <li class="toctree-l1 current"><a class="current reference internal" href="#">PuTTY (for Windows only)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="#creating-ssh-keys">Creating SSH Keys</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#id1">Creating SSH Keys</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#setting-up-ssh-client">Setting up SSH client</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#creating-ssh-keys">Creating SSH Keys</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="createsshkey.html">Use PuTTYgen</a></li>
@@ -174,31 +174,31 @@
 <p>PuTTY is an SSH and telnet client for Windows, developed originally by Simon Tatham. It is open source  developed and supported by a group of volunteers.</p>
 <p>Download and install PuTTY’s latest version following the instructions from <a class="reference external" href="https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html">here</a></p>
 </div>
-<div class="section" id="creating-ssh-keys">
-<h1>Creating SSH Keys<a class="headerlink" href="#creating-ssh-keys" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="setting-up-ssh-client">
+<h1>Setting up SSH client<a class="headerlink" href="#setting-up-ssh-client" title="Permalink to this headline">¶</a></h1>
 <p>After you finish installing PuTTY, you should have something similar to this:</p>
-<div class="figure align-center" id="id2">
+<div class="figure align-center" id="id1">
 <a class="reference internal image-reference" href="_images/PuttyInstalled.png"><img alt="alt textt" src="_images/PuttyInstalled.png" style="width: 324.0px; height: 333.0px;" /></a>
-<p class="caption"><span class="caption-text">Make sure you have PuTTY and PuTTYgen Installed</span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
+<p class="caption"><span class="caption-text">Make sure you have PuTTY and PuTTYgen Installed</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
 </div>
 <p>Make sure that both PuTTY and PuTTYgen were successfully installed. The first one is the client and the second is how we will generate the SSH Keys.</p>
-<div class="section" id="id1">
-<h2>Creating SSH Keys<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="creating-ssh-keys">
+<h2>Creating SSH Keys<a class="headerlink" href="#creating-ssh-keys" title="Permalink to this headline">¶</a></h2>
 <p>Before connecting using SSH, you need to create your private and public SSH Keys (refer to <a class="reference external" href="https://www.linode.com/docs/guides/use-public-key-authentication-with-ssh/">Use SSH Public Key Authentication</a> to understand more about SSH Keys)</p>
 <p>Start PuTTYgen and select RSA and change <strong>Number of bits in a generated key</strong> from 2048 to 4094.</p>
-<div class="figure align-center" id="id3">
+<div class="figure align-center" id="id2">
 <a class="reference internal image-reference" href="_images/keygen_1.png"><img alt="alt textt" src="_images/keygen_1.png" style="width: 420.0px; height: 329.0px;" /></a>
-<p class="caption"><span class="caption-text">Change ‘number of bits in a generated key’ to 4096</span><a class="headerlink" href="#id3" title="Permalink to this image">¶</a></p>
+<p class="caption"><span class="caption-text">Change ‘number of bits in a generated key’ to 4096</span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
 </div>
 <p>Then hit the <strong>Generate</strong> button and keep moving the mouse to induce randomness into the key</p>
-<div class="figure align-center" id="id4">
+<div class="figure align-center" id="id3">
 <a class="reference internal image-reference" href="_images/keygen_2.png"><img alt="alt textt" src="_images/keygen_2.png" style="width: 422.79999999999995px; height: 331.79999999999995px;" /></a>
-<p class="caption"><span class="caption-text">Keep moving the mouse!</span><a class="headerlink" href="#id4" title="Permalink to this image">¶</a></p>
+<p class="caption"><span class="caption-text">Keep moving the mouse!</span><a class="headerlink" href="#id3" title="Permalink to this image">¶</a></p>
 </div>
 <p>once the key is created, you can secure it adding a passphrase (simple put, a password). This is not required, but it is a good practice. Do not forget it as it will be used later in the process to connect to the remote server.</p>
-<div class="figure align-center" id="id5">
+<div class="figure align-center" id="id4">
 <a class="reference internal image-reference" href="_images/keygen_3.png"><img alt="alt textt" src="_images/keygen_3.png" style="width: 420.0px; height: 329.0px;" /></a>
-<p class="caption"><span class="caption-text">Enter keypassphrase to protect your ssh key</span><a class="headerlink" href="#id5" title="Permalink to this image">¶</a></p>
+<p class="caption"><span class="caption-text">Enter keypassphrase to protect your ssh key</span><a class="headerlink" href="#id4" title="Permalink to this image">¶</a></p>
 </div>
 </div>
 </div>

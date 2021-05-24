@@ -8,7 +8,7 @@ PuTTY is an SSH and telnet client for Windows, developed originally by Simon Tat
 
 Download and install PuTTY's latest version following the instructions from `here <https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html>`_ 
 
-Creating SSH Keys
+Setting up SSH client
 ----------------------------
 
 After you finish installing PuTTY, you should have something similar to this:
