@@ -1,4 +1,4 @@
-Before you begin 
+Quick Overview
 -----------------------
 You would need to setup you system properly before starting with assignments for this course.
 
@@ -11,9 +11,6 @@ What you need to do is
 
 This is a quick reference to guide you to accomplish the above tasks, 
 however it can be done in different ways.  
-
-Quick overview
-----------------
 
 For the first part of this course we are going to be working on a remote server, connected trhough SSH (Secure Socket Shell), using Visual Studio Code (VSCode) as our development platform (IDE).
 
