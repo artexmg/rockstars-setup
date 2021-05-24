@@ -2,17 +2,9 @@ Quick Overview
 -----------------------
 You would need to setup you system properly before starting with assignments for this course.
 
-What you need to do is 
-
-1. Install a ssh terminal
-2. Generate and setup your public and private SSH Key
-3. Install VS Code and setup for remote connection
-4. Test your environment
-
-This is a quick reference to guide you to accomplish the above tasks, 
-however it can be done in different ways.  
-
 For the first part of this course we are going to be working on a remote server, connected trhough SSH (Secure Socket Shell), using Visual Studio Code (VSCode) as our development platform (IDE).
+
+The goal is to setup up a working environment similar to the one depicted in the next image
 
 .. figure:: ./images/RemoteConnection.png
     :alt: alt text
@@ -21,12 +13,22 @@ For the first part of this course we are going to be working on a remote server,
 
     Remote connection using SSH and Visual Studio Code
 
-The following are a series of steps to get all the subsystems installed and working together. It is a guide for you to get started but it is not a extensive manual that covers all the possibilities and problems that you could encounter during the setup of these tools. 
+
+What you will need to do is 
+
+1. Install a ssh terminal
+2. Generate and setup your public and private SSH Key
+3. Install VS Code and setup for remote connection
+4. Test your environment    
+
+.. admonition:: Not an exahustive guide
+
+    The objective of this document is to provide a quick reference to help you to accomplish the tasks mentioned above. While this is a guide for you to get started, the intention is not to provide an extensive installation manual covering all the possibilities and problems that you could encounter during the setup of these tools. Please refer to the official documentation provided along this document.   
 
 Useful Links
 --------------
 
-Please, refer to the links in order to gain more knowledge on the specific subjects.
+The following are useful links to gain insight on the specific subjects:
 
 `How does SSH Work <https://www.hostinger.com/tutorials/ssh-tutorial-how-does-ssh-work>`_
 

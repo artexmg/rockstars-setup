@@ -9,7 +9,7 @@ Before You Begin
 
 This is a quick setup guide to help you to get your remote system up and running. 
 
-The instructions in this manual are specifically targeted for Rockstars G6, so if you are following them for a different server or program you probably will need to modify the IP address accordingly.
+The instructions on this manual are specifically targeted for Rockstars G6, so if you are following them for a different server or program you probably will need to modify the IP address accordingly.
 
 
 .. |Rockstars| image:: ./images/rockstarslogo.png

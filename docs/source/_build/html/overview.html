@@ -40,7 +40,9 @@
 
     
     <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Search" href="search.html" /> 
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="PuTTY (for Windows only)" href="installputty.html" />
+    <link rel="prev" title="Before You Begin" href="index.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -85,11 +87,17 @@
               
             
             
-              <p class="caption"><span class="caption-text">Setting your work environment:</span></p>
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Quick Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#useful-links">Useful Links</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Setting your work environment:</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="installputty.html">PuTTY (for Windows only)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="installputty.html#setting-up-ssh-client">Setting up SSH client</a></li>
-<li class="toctree-l1"><a class="reference internal" href="createsshkey.html">Use PuTTYgen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installputty.html#configuring-ssh-client">Configuring SSH Client</a></li>
+<li class="toctree-l1"><a class="reference internal" href="connectremote.html">Connect to Remote Server</a></li>
 </ul>
 
             
@@ -160,25 +168,27 @@
   <div class="section" id="quick-overview">
 <h1>Quick Overview<a class="headerlink" href="#quick-overview" title="Permalink to this headline">¶</a></h1>
 <p>You would need to setup you system properly before starting with assignments for this course.</p>
-<p>What you need to do is</p>
+<p>For the first part of this course we are going to be working on a remote server, connected trhough SSH (Secure Socket Shell), using Visual Studio Code (VSCode) as our development platform (IDE).</p>
+<p>The goal is to setup up a working environment similar to the one depicted in the next image</p>
+<div class="figure align-center" id="id1">
+<a class="reference internal image-reference" href="_images/RemoteConnection.png"><img alt="alt text" src="_images/RemoteConnection.png" style="width: 465.6px; height: 236.8px;" /></a>
+<p class="caption"><span class="caption-text">Remote connection using SSH and Visual Studio Code</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
+</div>
+<p>What you will need to do is</p>
 <ol class="arabic simple">
 <li><p>Install a ssh terminal</p></li>
 <li><p>Generate and setup your public and private SSH Key</p></li>
 <li><p>Install VS Code and setup for remote connection</p></li>
 <li><p>Test your environment</p></li>
 </ol>
-<p>This is a quick reference to guide you to accomplish the above tasks,
-however it can be done in different ways.</p>
-<p>For the first part of this course we are going to be working on a remote server, connected trhough SSH (Secure Socket Shell), using Visual Studio Code (VSCode) as our development platform (IDE).</p>
-<div class="figure align-center" id="id1">
-<a class="reference internal image-reference" href="_images/RemoteConnection.png"><img alt="alt text" src="_images/RemoteConnection.png" style="width: 465.6px; height: 236.8px;" /></a>
-<p class="caption"><span class="caption-text">Remote connection using SSH and Visual Studio Code</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
+<div class="admonition-not-an-exahustive-guide admonition">
+<p class="admonition-title">Not an exahustive guide</p>
+<p>The objective of this document is to provide a quick reference to help you to accomplish the tasks mentioned above. While this is a guide for you to get started, the intention is not to provide an extensive installation manual covering all the possibilities and problems that you could encounter during the setup of these tools. Please refer to the official documentation provided along this document.</p>
 </div>
-<p>The following are a series of steps to get all the subsystems installed and working together. It is a guide for you to get started but it is not a extensive manual that covers all the possibilities and problems that you could encounter during the setup of these tools.</p>
 </div>
 <div class="section" id="useful-links">
 <h1>Useful Links<a class="headerlink" href="#useful-links" title="Permalink to this headline">¶</a></h1>
-<p>Please, refer to the links in order to gain more knowledge on the specific subjects.</p>
+<p>The following are useful links to gain insight on the specific subjects:</p>
 <p><a class="reference external" href="https://www.hostinger.com/tutorials/ssh-tutorial-how-does-ssh-work">How does SSH Work</a></p>
 <p><a class="reference external" href="https://www.linode.com/docs/guides/use-public-key-authentication-with-ssh/">Use SSH Publick Key authentication on Linux, MacOS and Windows</a></p>
 </div>
@@ -188,6 +198,10 @@ however it can be done in different ways.</p>
            
           </div>
           <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="installputty.html" class="btn btn-neutral float-right" title="PuTTY (for Windows only)" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="index.html" class="btn btn-neutral float-left" title="Before You Begin" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
 
   <hr/>
 
