@@ -1,0 +1,267 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>PuTTY (for Mac only) &mdash; rockstars setup  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> rockstars setup
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="overview.html">Quick Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="overview.html#useful-links">Useful Links</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Setting your work environment:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="connectremote.html">Connect to the remote server</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">rockstars setup</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>PuTTY (for Mac only)</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/installputtyMac.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <section id="putty-for-mac-only">
+<h1>PuTTY (for Mac only)<a class="headerlink" href="#putty-for-mac-only" title="Permalink to this headline">¶</a></h1>
+<p><strong>Note:</strong> <em>If you are using Windows, then you need to install PuTTY. Go to Windows section instead</em></p>
+<section id="creating-ssh-keys">
+<h2>Creating SSH Keys<a class="headerlink" href="#creating-ssh-keys" title="Permalink to this headline">¶</a></h2>
+<p>Before connecting using SSH, you need to create your private and public SSH Keys (refer to <a class="reference external" href="https://www.linode.com/docs/guides/use-public-key-authentication-with-ssh/">Use SSH Public Key Authentication</a> to understand more about SSH Keys)</p>
+<p>Start <em>terminal</em> and enter</p>
+<blockquote>
+<div><p>ssh-keygen -b 4046</p>
+</div></blockquote>
+<p>this will create a RSA with the <strong>Number of bits in a generated key</strong> equals to 4094.</p>
+<figure class="align-center">
+<a class="reference internal image-reference" href="_images/mackeygen_1.png"><img alt="alt textt" src="_images/mackeygen_1.png" style="width: 488.0px; height: 68.8px;" /></a>
+</figure>
+<p>If you don’t have a previously generated key, it is recommended to accept the default file name. If you have more than one key then you can modify the name of the file, but you will need to enter the full path (e.g. /Users/amendoza/.ssh/id_rsa_rockstars6G).</p>
+<p>Also, you can secure your key by adding a passphrase (simple put, a password). This is not required, but it is a good practice. Do not forget what the password is, as it will be used later in the process to connect to the remote server.</p>
+<figure class="align-center" id="id1">
+<a class="reference internal image-reference" href="_images/mackeygen_2.png"><img alt="alt textt" src="_images/mackeygen_2.png" style="width: 628.0px; height: 298.40000000000003px;" /></a>
+<figcaption>
+<p><span class="caption-text">noticed that the filename includes a full path</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
+<p>after the command is executed succesfully, you can verify that the files were created in the specified directory. The one with extension <em>pub</em> correspond to the public key.</p>
+<figure class="align-center" id="id2">
+<a class="reference internal image-reference" href="_images/mackeygen_3.png"><img alt="alt textt" src="_images/mackeygen_3.png" style="width: 620.0px; height: 69.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">verify that both, public and private keys were created</span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
+</section>
+</section>
+<section id="configuring-ssh-connection">
+<h1>Configuring SSH connection<a class="headerlink" href="#configuring-ssh-connection" title="Permalink to this headline">¶</a></h1>
+<p>Now that you have your SSH Keys in place, we can configure our connection.</p>
+<p>In the <em>Terminal</em> connect to the remote server by executing the ssh command with your own username and IP address (or URL).</p>
+<blockquote>
+<div><p>ssh <a class="reference external" href="mailto:username&#37;&#52;&#48;104&#46;237&#46;138&#46;186">username<span>&#64;</span>104<span>&#46;</span>237<span>&#46;</span>138<span>&#46;</span>186</a></p>
+</div></blockquote>
+<p>You may get a warning that the key was not accepted. This is expected as we have not uploaded the public key to the remote server.
+It will ask for your password instead (not the passphrase, but the password for the remote server). After the connection is successfully stablished you should see something similar to the image below</p>
+<figure class="align-center">
+<a class="reference internal image-reference" href="_images/mackeygen_4.png"><img alt="alt textt" src="_images/mackeygen_4.png" style="width: 506.7px; height: 171.0px;" /></a>
+</figure>
+<p>Now you can upload your public key file with <em>ssh-copy-id</em> command, keyed from the <em>Terminal</em></p>
+<blockquote>
+<div><p>ssh-copy-id <a class="reference external" href="mailto:username&#37;&#52;&#48;104&#46;237&#46;138&#46;186">username<span>&#64;</span>104<span>&#46;</span>237<span>&#46;</span>138<span>&#46;</span>186</a></p>
+</div></blockquote>
+<p>It will ask for your passphrase to validate that you have the right credentials. At the end you will get a screen similar to above, but not exactly the same as it will vary depending on the keys installed previously</p>
+<figure class="align-center">
+<a class="reference internal image-reference" href="_images/mackeygen_5.png"><img alt="alt textt" src="_images/mackeygen_5.png" style="width: 452.8px; height: 204.8px;" /></a>
+</figure>
+<p>Finally, to verify that everything worked as intended, try to connect using <em>ssh</em>, but this time you should not be asked for your password (you may be asked to enter only your passphrase)</p>
+<figure class="align-center">
+<a class="reference internal image-reference" href="_images/mackeygen_6.png"><img alt="alt textt" src="_images/mackeygen_6.png" style="width: 438.40000000000003px; height: 207.20000000000002px;" /></a>
+</figure>
+<p>These are all the configurations that we would need to make our SSH connection work.
+Now that you have all the files ready, the next step would be connecting to the remote server. Do not close PuTTY!</p>
+</section>
+
+
+           </div>
+           
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, Artemio Mendoza.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
