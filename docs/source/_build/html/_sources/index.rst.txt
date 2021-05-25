@@ -33,6 +33,6 @@ If you have any question, please contact your instructor.
    :maxdepth: 1
    :caption: Setting your work environment:
 
-   installputty
-   connectremote
-   installcode
+   installputtyWindows
+   installputtyMac
+   installVSCode

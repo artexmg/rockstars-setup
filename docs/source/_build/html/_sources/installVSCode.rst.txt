@@ -129,13 +129,13 @@ save the file and close VS Code. Reopen it and re-stablish a remote connection f
 .. |uniquename| image:: ./images/remote_icon.png
     :scale: 32%
 
-This time you should not be required to enter a password, but your passphrase for your public key. If everything is OK then you should login and be able to connect remotely.
+This time you should not be required to enter a password, but your publick key passphrase.
 
 
-Celebrate !
+Celebrate
 -----------
 
-Congratulations, you did a good job configuring your remote environment. Now it is time to celebrate!
+Congratulations, now you fineshed to configure your remote environment!
 
 .. figure:: ./images/rockstarslogo.png 
     :align: center

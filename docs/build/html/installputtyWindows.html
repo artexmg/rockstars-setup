@@ -218,14 +218,18 @@
 <p><span class="caption-text">Make sure to keep the file extension as ppk</span><a class="headerlink" href="#id5" title="Permalink to this image">¶</a></p>
 </figcaption>
 </figure>
-<p>Next, we need to select the public key. Right click on the area where the publick key is displayed, and then click <em>select all</em> and then copy. Then, open Notepad and paste the value and save it as <em>.txt</em> (do not use a different format or the key would be altered).</p>
-<figure class="align-center">
-<a class="reference internal image-reference" href="_images/keygen_5.png"><img alt="alt textt" src="_images/keygen_5.png" style="width: 491.0px; height: 306.0px;" /></a>
-</figure>
+<p id="ssh-public-key">Next, we need to select the public key. Right click on the area where the publick key is displayed, and then click <em>select all</em> and then copy.</p>
+<p>Then, open Notepad and paste the value and save it as <em>.txt</em> (do not use a different format or the key would be altered). Keep this file at hand, <a class="reference internal" href="installVSCode.html#auth-file"><span class="std std-ref">it will be used in a follow step to create the remote authorization file</span></a>.</p>
 <figure class="align-center" id="id6">
+<a class="reference internal image-reference" href="_images/keygen_5.png"><img alt="alt textt" src="_images/keygen_5.png" style="width: 491.0px; height: 306.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">select all</span><a class="headerlink" href="#id6" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id7">
 <a class="reference internal image-reference" href="_images/keygen_6.png"><img alt="alt textt" src="_images/keygen_6.png" style="width: 441.0px; height: 301.0px;" /></a>
 <figcaption>
-<p><span class="caption-text">Select and copy your public key</span><a class="headerlink" href="#id6" title="Permalink to this image">¶</a></p>
+<p><span class="caption-text">then copy your public key</span><a class="headerlink" href="#id7" title="Permalink to this image">¶</a></p>
 </figcaption>
 </figure>
 <div class="admonition-saving-public-key-file-from-puttygen admonition">
@@ -237,17 +241,17 @@
 <h2>Configuring SSH Client<a class="headerlink" href="#configuring-ssh-client" title="Permalink to this headline">¶</a></h2>
 <p>Now that you have your SSH Keys public and private in place, we can configure our client by starting PuTTY. You should see the PuTTY Configuration window.</p>
 <p>Go to Category -&gt; Session and enter <em>Host Name (or IP address)</em> as indicated by your instructor. Also, give a name to <em>Saved Sessions</em> (e.g. RockstarsG6) and hit Save button. You should see something similar to the image below</p>
-<figure class="align-center" id="id7">
+<figure class="align-center" id="id8">
 <a class="reference internal image-reference" href="_images/putty_1.png"><img alt="alt textt" src="_images/putty_1.png" style="width: 315.0px; height: 309.4px;" /></a>
 <figcaption>
-<p><span class="caption-text">Enter Hostname and a name for your session. Hit Save button.</span><a class="headerlink" href="#id7" title="Permalink to this image">¶</a></p>
+<p><span class="caption-text">Enter Hostname and a name for your session. Hit Save button.</span><a class="headerlink" href="#id8" title="Permalink to this image">¶</a></p>
 </figcaption>
 </figure>
 <p>Then move to Category -&gt; <em>Connection</em> -&gt; <em>Auth</em> and click the button <em>Browse</em>. Here you will enter the private key file that you saved in the previous section. Be sure that it is the one with extension <em>ppk</em>.</p>
-<figure class="align-center" id="id8">
+<figure class="align-center" id="id9">
 <a class="reference internal image-reference" href="_images/putty_2.png"><img alt="alt textt" src="_images/putty_2.png" style="width: 313.59999999999997px; height: 306.59999999999997px;" /></a>
 <figcaption>
-<p><span class="caption-text">Select Private Key file saved before.</span><a class="headerlink" href="#id8" title="Permalink to this image">¶</a></p>
+<p><span class="caption-text">Select Private Key file saved before.</span><a class="headerlink" href="#id9" title="Permalink to this image">¶</a></p>
 </figcaption>
 </figure>
 <p>These are all the configurations that we would need to make PuTTY work, but you may want to customized it further to have a better experience using the console. This link <a class="reference external" href="https://www.linux.com/training-tutorials/improving-putty-settings-windows/#:~:text=Choose%20a%20good%20font.,Lucida%20Console%2C%209%2Dpoint.">improve putty settings on windows</a> could help you to do so.</p>
@@ -256,25 +260,25 @@
 <section id="remote-server-connection">
 <h2>Remote server connection<a class="headerlink" href="#remote-server-connection" title="Permalink to this headline">¶</a></h2>
 <p>Once everything is setup, it is time to connect to the remote server.</p>
-<figure class="align-center" id="id9">
+<figure class="align-center" id="id10">
 <a class="reference internal image-reference" href="_images/putty_1.png"><img alt="alt textt" src="_images/putty_1.png" style="width: 315.0px; height: 309.4px;" /></a>
 <figcaption>
-<p><span class="caption-text">Select your session and Load it before clicking Open.</span><a class="headerlink" href="#id9" title="Permalink to this image">¶</a></p>
+<p><span class="caption-text">Select your session and Load it before clicking Open.</span><a class="headerlink" href="#id10" title="Permalink to this image">¶</a></p>
 </figcaption>
 </figure>
 <p>On PuTTY, go back to <em>Session</em> and make sure that you are on your saved one (e.g. RockstarsG6). Then click <em>Open</em>.</p>
 <p>If everything was configured OK, you should get a Security Alert windows, telling you that this is the first time you are connecting to the server. Click Accept.</p>
-<figure class="align-center" id="id10">
+<figure class="align-center" id="id11">
 <a class="reference internal image-reference" href="_images/putty_6.png"><img alt="alt textt" src="_images/putty_6.png" style="width: 467.59999999999997px; height: 282.79999999999995px;" /></a>
 <figcaption>
-<p><span class="caption-text">PuTTY Security Alert.</span><a class="headerlink" href="#id10" title="Permalink to this image">¶</a></p>
+<p><span class="caption-text">PuTTY Security Alert.</span><a class="headerlink" href="#id11" title="Permalink to this image">¶</a></p>
 </figcaption>
 </figure>
 <p>Enter your username as prompted and hit return key</p>
-<figure class="align-center" id="id11">
+<figure class="align-center" id="id12">
 <a class="reference internal image-reference" href="_images/putty_7.png"><img alt="alt textt" src="_images/putty_7.png" style="width: 464.79999999999995px; height: 242.2px;" /></a>
 <figcaption>
-<p><span class="caption-text">Enter your username.</span><a class="headerlink" href="#id11" title="Permalink to this image">¶</a></p>
+<p><span class="caption-text">Enter your username.</span><a class="headerlink" href="#id12" title="Permalink to this image">¶</a></p>
 </figcaption>
 </figure>
 <p>You will see a message telling you that the server refused the key. This is OK as the public file has not being uploaded yet (this is going to be done in the next step).</p>

@@ -62,20 +62,26 @@ Now, save the **private key** file. Note that the file extension is *.ppk*
     :scale: 50 %
 
     Make sure to keep the file extension as ppk
-    
-Next, we need to select the public key. Right click on the area where the publick key is displayed, and then click *select all* and then copy. Then, open Notepad and paste the value and save it as *.txt* (do not use a different format or the key would be altered).
+
+.. _ssh_public_key:    
+
+Next, we need to select the public key. Right click on the area where the publick key is displayed, and then click *select all* and then copy. 
+
+Then, open Notepad and paste the value and save it as *.txt* (do not use a different format or the key would be altered). Keep this file at hand, :ref:`it will be used in a follow step to create the remote authorization file<auth_file>`.
 
 .. figure:: ./images/keygen_5.png
     :alt: alt textt
     :align: center
     :scale: 50 %
 
+    select all 
+
 .. figure:: ./images/keygen_6.png
     :alt: alt textt
     :align: center
     :scale: 50 %
 
-    Select and copy your public key
+    then copy your public key
 
 .. admonition:: saving public key file from PuTTYgen
 

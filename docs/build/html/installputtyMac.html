@@ -176,9 +176,9 @@
 <h2>Creating SSH Keys<a class="headerlink" href="#creating-ssh-keys" title="Permalink to this headline">¶</a></h2>
 <p>Before connecting using SSH, you need to create your private and public SSH Keys (refer to <a class="reference external" href="https://www.linode.com/docs/guides/use-public-key-authentication-with-ssh/">Use SSH Public Key Authentication</a> to understand more about SSH Keys)</p>
 <p>Start <em>terminal</em> and enter</p>
-<blockquote>
-<div><p>ssh-keygen -b 4046</p>
-</div></blockquote>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>ssh-keygen -b <span class="m">4046</span>
+</pre></div>
+</div>
 <p>this will create a RSA with the <strong>Number of bits in a generated key</strong> equals to 4094.</p>
 <figure class="align-center" id="id1">
 <a class="reference internal image-reference" href="_images/mackeygen_1.png"><img alt="alt textt" src="_images/mackeygen_1.png" style="width: 488.0px; height: 68.8px;" /></a>
@@ -204,11 +204,11 @@
 </section>
 <section id="configuring-ssh-connection">
 <h2>Configuring SSH connection<a class="headerlink" href="#configuring-ssh-connection" title="Permalink to this headline">¶</a></h2>
-<p>Now that you have your SSH Keys in place, we can configure our connection.</p>
-<p>In the <em>Terminal</em> connect to the remote server by executing the ssh command with your own username and IP address (or URL).</p>
-<blockquote>
-<div><p>ssh <a class="reference external" href="mailto:username&#37;&#52;&#48;104&#46;237&#46;138&#46;186">username<span>&#64;</span>104<span>&#46;</span>237<span>&#46;</span>138<span>&#46;</span>186</a></p>
-</div></blockquote>
+<p>Now that you have your SSH Keys in place, we can configure our connection to the remote server.</p>
+<p>In the <em>Terminal</em> connect to the remote server by executing the ssh command entering your own username and IP address (or URL).</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>ssh username@104.237.138.186
+</pre></div>
+</div>
 <p>You may get a warning that the key was not accepted. This is expected as we have not uploaded the public key to the remote server.
 It will ask for your password instead (not the passphrase, but the password for the remote server). After the connection is successfully stablished you should see something similar to the image below</p>
 <figure class="align-center" id="id4">
@@ -218,9 +218,9 @@ It will ask for your password instead (not the passphrase, but the password for 
 </figcaption>
 </figure>
 <p>Now you can upload your public key file with <em>ssh-copy-id</em> command, keyed from the <em>Terminal</em></p>
-<blockquote>
-<div><p>ssh-copy-id <a class="reference external" href="mailto:username&#37;&#52;&#48;104&#46;237&#46;138&#46;186">username<span>&#64;</span>104<span>&#46;</span>237<span>&#46;</span>138<span>&#46;</span>186</a></p>
-</div></blockquote>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>ssh-copy-id username@104.237.138.186
+</pre></div>
+</div>
 <p>It will ask for your passphrase to validate that you have the right credentials. At the end you will get a screen similar to above, but not exactly the same as it will vary depending on the keys installed previously</p>
 <figure class="align-center" id="id5">
 <a class="reference internal image-reference" href="_images/mackeygen_5.png"><img alt="alt textt" src="_images/mackeygen_5.png" style="width: 452.8px; height: 204.8px;" /></a>

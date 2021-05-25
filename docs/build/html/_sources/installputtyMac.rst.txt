@@ -10,6 +10,8 @@ Before connecting using SSH, you need to create your private and public SSH Keys
 
 Start *terminal* and enter 
 
+.. code-block:: shell
+
     ssh-keygen -b 4046
 
 this will create a RSA with the **Number of bits in a generated key** equals to 4094.
@@ -45,11 +47,14 @@ after the command is executed succesfully, you can verify that the files were cr
 Configuring SSH connection
 --------------------------
 
-Now that you have your SSH Keys in place, we can configure our connection.
+Now that you have your SSH Keys in place, we can configure our connection to the remote server.
 
-In the *Terminal* connect to the remote server by executing the ssh command with your own username and IP address (or URL).
+In the *Terminal* connect to the remote server by executing the ssh command entering your own username and IP address (or URL).
+
+.. code-block:: shell
 
     ssh username@104.237.138.186
+
 
 You may get a warning that the key was not accepted. This is expected as we have not uploaded the public key to the remote server. 
 It will ask for your password instead (not the passphrase, but the password for the remote server). After the connection is successfully stablished you should see something similar to the image below
@@ -62,6 +67,8 @@ It will ask for your password instead (not the passphrase, but the password for 
     it will ask for your password
 
 Now you can upload your public key file with *ssh-copy-id* command, keyed from the *Terminal*
+
+.. code-block:: shell
 
     ssh-copy-id username@104.237.138.186
 
