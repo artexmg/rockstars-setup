@@ -1,5 +1,7 @@
-SSH client (for Windows only)
-============================================
+.. _setup_pc:
+
+SSH client (for PC)
+===================
 
 **Note:** *If you are using MacOSX as a OS, then you don't need to install PuTTY. Instead you will use the terminal*
 

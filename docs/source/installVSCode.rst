@@ -51,17 +51,15 @@ By doing so you will be asked to enter the remote server credentials that you pr
     enter your remote ssh credentials
 
 
-Upload Publick Key
-==================
+Upload Publick Key (for PC)
+============================
 
- Mac
- ____
- If you are working over a Mac, then you should get a successfull connection after you are asked for your passphrase, since you already uploaded your public ssh key in a previous step. 
+If you are working over a Mac you already uploaded your public ssh key in a previous step. Hence you should get a successfull connection after you are asked to enter your passphrase.
 
- Congratulations, you're all setup!
+Congratulations, you're all setup! You can :ref:`celebrate now <celebrate>`.
 
- PC
- ____
+PC
+---
 
  If you're working over a PC you will be asked to enter your remote password to stablish a connection. Enter your password and continue.
 
@@ -131,6 +129,7 @@ save the file and close VS Code. Reopen it and re-stablish a remote connection f
 
 This time you should not be required to enter a password, but your passphrase for your public key. If everything is OK then you should login and be able to connect remotely.
 
+.. _celebrate:
 
 Celebrate !
 -----------

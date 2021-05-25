@@ -17,9 +17,9 @@ The instructions on this manual are specifically targeted for Rockstars G6, so i
 
 Make sure that you have handy:
 
-* Remote username
-* Remote password
-* Remote IP server or url 
+#. Remote username
+#. Remote password
+#. Remote IP server or url 
 
 If you have any question, please contact your instructor.
 

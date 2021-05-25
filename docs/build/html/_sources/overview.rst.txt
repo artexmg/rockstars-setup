@@ -23,9 +23,20 @@ What you will need to do is
 
 .. admonition:: Not an exahustive guide
 
-    The objective of this document is to provide a quick reference to help you to accomplish the tasks mentioned above. While this is a guide for you to get started, the intention is not to provide an extensive installation manual covering all the possibilities and problems that you could encounter during the setup of these tools. Please refer to the official documentation provided along this document.   
+    The objective of this document is to provide a quick reference to help you to accomplish the tasks mentioned above. 
+    
+    While this is a guide for you to get started, the intention is not to provide an extensive installation manual covering all the possibilities and problems that you could encounter during the setup of these tools. Please refer to the official documentation provided along this document.   
 
-Useful Links
+
+Next steps 
+-----------
+
+:ref:`Install SSH Client (for Mac only) <setup_mac>`
+
+:ref:`Install SSH Client (for PC only) <setup_pc>`
+
+
+Reference
 --------------
 
 The following are useful links to gain insight on the specific subjects:

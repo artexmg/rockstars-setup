@@ -1,4 +1,6 @@
-SSH client (for Mac only)
+.. _setup_mac:
+
+SSH client (for Mac)
 ====================
 
 **Note:** *If you are using Windows, then you need to install PuTTY. Go to Windows section instead*

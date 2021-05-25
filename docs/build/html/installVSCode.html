@@ -42,7 +42,7 @@
     
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="prev" title="SSH client (for Mac only)" href="installputtyMac.html" /> 
+    <link rel="prev" title="SSH client (for Mac)" href="installputtyMac.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -94,14 +94,15 @@
 </ul>
 <p class="caption"><span class="caption-text">Setting your work environment:</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="installputtyWindows.html">SSH client (for Windows only)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="installputtyMac.html">SSH client (for Mac only)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installputtyWindows.html">SSH client (for PC)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installputtyMac.html">SSH client (for Mac)</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Install Visual Studio Code</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#download-and-install-vs-code">Download and install VS Code</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#configure-vs-code-for-working-remote">Configure VS Code for working remote</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="#upload-publick-key">Upload Publick Key</a><ul>
+<li class="toctree-l1"><a class="reference internal" href="#upload-publick-key-for-pc">Upload Publick Key (for PC)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#pc">PC</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#celebrate">Celebrate !</a></li>
 </ul>
 </li>
@@ -180,63 +181,65 @@
 <h2>Download and install VS Code<a class="headerlink" href="#download-and-install-vs-code" title="Permalink to this headline">¶</a></h2>
 <p>Look for the last version of <em>VS Code</em>, download and install it in your computer following the instructions in the site.</p>
 <p>After that, open it and install the <em>Remote Development extension pack</em> by going to the “extension icon” highligthed in the image below</p>
-<figure class="align-center" id="id1">
+<figure class="align-center" id="id2">
 <a class="reference internal image-reference" href="_images/vscode_1.png"><img alt="alt text" src="_images/vscode_1.png" style="width: 409.6px; height: 307.20000000000005px;" /></a>
 <figcaption>
-<p><span class="caption-text">select the extension icon</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
+<p><span class="caption-text">select the extension icon</span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
 </figcaption>
 </figure>
 <p>then you will search for the extension named <em>remote</em> in the Marketplace, as shown in the figure below. You need to select and install it.</p>
-<figure class="align-center" id="id2">
+<figure class="align-center" id="id3">
 <a class="reference internal image-reference" href="_images/vscode_2.png"><img alt="alt text" src="_images/vscode_2.png" style="width: 409.6px; height: 307.20000000000005px;" /></a>
 <figcaption>
-<p><span class="caption-text">install extension remote</span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
+<p><span class="caption-text">install extension remote</span><a class="headerlink" href="#id3" title="Permalink to this image">¶</a></p>
 </figcaption>
 </figure>
 </section>
 <section id="configure-vs-code-for-working-remote">
 <h2>Configure VS Code for working remote<a class="headerlink" href="#configure-vs-code-for-working-remote" title="Permalink to this headline">¶</a></h2>
 <p>Once the extension is installed, you need to click over the remote connection icon (1) and then select and click the <em>Connect Current Windows to Host…</em> option (2)</p>
-<figure class="align-center" id="id3">
+<figure class="align-center" id="id4">
 <a class="reference internal image-reference" href="_images/vscode_4.png"><img alt="alt text" src="_images/vscode_4.png" style="width: 409.6px; height: 307.20000000000005px;" /></a>
 <figcaption>
-<p><span class="caption-text">configure remote server</span><a class="headerlink" href="#id3" title="Permalink to this image">¶</a></p>
+<p><span class="caption-text">configure remote server</span><a class="headerlink" href="#id4" title="Permalink to this image">¶</a></p>
 </figcaption>
 </figure>
 <p>By doing so you will be asked to enter the remote server credentials that you previously used to connect via PuTTY or Terminal, depending on your system (PC or MAC correspondly).</p>
-<figure class="align-center" id="id4">
+<figure class="align-center" id="id5">
 <a class="reference internal image-reference" href="_images/vscode_5.png"><img alt="alt text" src="_images/vscode_5.png" style="width: 409.6px; height: 307.20000000000005px;" /></a>
 <figcaption>
-<p><span class="caption-text">enter your remote ssh credentials</span><a class="headerlink" href="#id4" title="Permalink to this image">¶</a></p>
+<p><span class="caption-text">enter your remote ssh credentials</span><a class="headerlink" href="#id5" title="Permalink to this image">¶</a></p>
 </figcaption>
 </figure>
 </section>
 </section>
-<section id="upload-publick-key">
-<h1>Upload Publick Key<a class="headerlink" href="#upload-publick-key" title="Permalink to this headline">¶</a></h1>
+<section id="upload-publick-key-for-pc">
+<h1>Upload Publick Key (for PC)<a class="headerlink" href="#upload-publick-key-for-pc" title="Permalink to this headline">¶</a></h1>
+<p>If you are working over a Mac you already uploaded your public ssh key in a previous step. Hence you should get a successfull connection after you are asked to enter your passphrase.</p>
+<p>Congratulations, you’re all setup! You can <a class="reference internal" href="#celebrate"><span class="std std-ref">celebrate now</span></a>.</p>
+<section id="pc">
+<h2>PC<a class="headerlink" href="#pc" title="Permalink to this headline">¶</a></h2>
 <blockquote>
-<div><p>If you are working over a Mac, then you should get a successfull connection after you are asked for your passphrase, since you already uploaded your public ssh key in a previous step.</p>
-<p>Congratulations, you’re all setup!</p>
-<p>If you’re working over a PC you will be asked to enter your remote password to stablish a connection. Enter your password and continue.</p>
-<figure class="align-center" id="id5">
+<div><p>If you’re working over a PC you will be asked to enter your remote password to stablish a connection. Enter your password and continue.</p>
+<figure class="align-center" id="id6">
 <a class="reference internal image-reference" href="_images/vscode_6.png"><img alt="alt text" src="_images/vscode_6.png" style="width: 410.40000000000003px; height: 307.20000000000005px;" /></a>
 <figcaption>
-<p><span class="caption-text">enter your password</span><a class="headerlink" href="#id5" title="Permalink to this image">¶</a></p>
+<p><span class="caption-text">enter your password</span><a class="headerlink" href="#id6" title="Permalink to this image">¶</a></p>
 </figcaption>
 </figure>
 </div></blockquote>
 <p>After a few seconds you should get a successfull connection. Visual Studio code could open a unix terminal for you, or not. In the first case, you will see a screen similar to the one shown below.</p>
-<figure class="align-center" id="id6">
+<figure class="align-center" id="id7">
 <a class="reference internal image-reference" href="_images/vscode_7.png"><img alt="alt text" src="_images/vscode_7.png" style="width: 409.6px; height: 307.20000000000005px;" /></a>
 <figcaption>
-<p><span class="caption-text">enter your remote ssh remote credentials</span><a class="headerlink" href="#id6" title="Permalink to this image">¶</a></p>
+<p><span class="caption-text">enter your remote ssh remote credentials</span><a class="headerlink" href="#id7" title="Permalink to this image">¶</a></p>
 </figcaption>
 </figure>
 <p>If you <strong>do not see a unix terminal</strong>, but instead you have this screen</p>
-<figure class="align-center" id="id7">
+<figure class="align-center" id="id8">
 <a class="reference internal image-reference" href="_images/vscode_8.png"><img alt="alt textt" src="_images/vscode_8.png" style="width: 410.40000000000003px; height: 307.20000000000005px;" /></a>
 <figcaption>
-<p><span class="caption-text">there is not a terminal Open</span><a class="headerlink" href="#id7" title="Permalink to this image">¶</a></p>
+<p><span class="caption-text">there is not a terminal Open</span><a class="headerlink" href="#id8" title="Permalink to this image">¶</a></p>
 </figcaption>
 </figure>
 <p>Then you need to open it manually by going to the menu and select Terminal-&gt;New Terminal.</p>
@@ -260,16 +263,17 @@
 </pre></div>
 </div>
 <p id="auth-file">After you enter the last command, you will see that the editor will open an empty file (authorized_keys). You will need to copy and paste the public key that <a class="reference internal" href="installputtyWindows.html#ssh-public-key"><span class="std std-ref">you generate using from PuTTYgen</span></a> in a previou step in the process.</p>
-<figure class="align-center" id="id8">
+<figure class="align-center" id="id9">
 <a class="reference internal image-reference" href="_images/vscode_9.png"><img alt="alt textt" src="_images/vscode_9.png" style="width: 410.40000000000003px; height: 307.20000000000005px;" /></a>
 <figcaption>
-<p><span class="caption-text">setting up public key file</span><a class="headerlink" href="#id8" title="Permalink to this image">¶</a></p>
+<p><span class="caption-text">setting up public key file</span><a class="headerlink" href="#id9" title="Permalink to this image">¶</a></p>
 </figcaption>
 </figure>
 <p>save the file and close VS Code. Reopen it and re-stablish a remote connection following the previous steps (click the remote green icon <a class="reference internal" href="_images/remote_icon.png"><img alt="uniquename" src="_images/remote_icon.png" style="width: 20.48px; height: 14.72px;" /></a> located at the left bottom corner and enter your credentials) .</p>
 <p>This time you should not be required to enter a password, but your passphrase for your public key. If everything is OK then you should login and be able to connect remotely.</p>
+</section>
 <section id="celebrate">
-<h2>Celebrate !<a class="headerlink" href="#celebrate" title="Permalink to this headline">¶</a></h2>
+<span id="id1"></span><h2>Celebrate !<a class="headerlink" href="#celebrate" title="Permalink to this headline">¶</a></h2>
 <p>Congratulations, you did a good job configuring your remote environment. Now it is time to celebrate!</p>
 <figure class="align-center">
 <a class="reference internal image-reference" href="_images/rockstarslogo.png"><img alt="_images/rockstarslogo.png" src="_images/rockstarslogo.png" style="width: 214.79999999999998px; height: 206.7px;" /></a>
@@ -283,7 +287,7 @@
           </div>
           <footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-        <a href="installputtyMac.html" class="btn btn-neutral float-left" title="SSH client (for Mac only)" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="installputtyMac.html" class="btn btn-neutral float-left" title="SSH client (for Mac)" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
     </div>
 
   <hr/>
