@@ -3,7 +3,7 @@
 SSH client (for PC)
 ===================
 
-**Note:** *If you are using MacOSX as a OS, then you don't need to install PuTTY. Instead you will use the terminal*
+**Note:** *If you are using MacOSX, then you already have a SSH client installed and you don't need to install PuTTY.* Go to :ref:`SSH client for Mac <setup_mac>` section instead.
 
 PuTTY is an SSH and telnet client for Windows, developed originally by Simon Tatham. It is open source  developed and supported by a group of volunteers. 
 
@@ -157,6 +157,8 @@ Meanwhile we are going to use a password to connect into the remote server (note
     :alt: alt textt
     :align: center
     :scale: 70 %
+
+    successful remote connection
 
 After you enter your password, you will see something similar to this. **Congratulations!** you are now connected to the remote unix server!
 

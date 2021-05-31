@@ -3,7 +3,7 @@
 SSH client (for Mac)
 ====================
 
-**Note:** *If you are using Windows, then you need to install PuTTY. Go to Windows section instead*
+**Note:** *If you are using Windows, then you need to install PuTTY.* Go to :ref:`SSH client for PC <setup_pc>` section instead.
 
 Creating SSH Keys
 ------------------
@@ -14,7 +14,7 @@ Start *terminal* and enter
 
 .. code-block:: shell
 
-    ssh-keygen -b 4046
+    ssh-keygen -b 4096
 
 this will create a RSA with the **Number of bits in a generated key** equals to 4094.
 

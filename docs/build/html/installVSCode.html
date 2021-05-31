@@ -4,8 +4,7 @@
 <html class="writer-html5" lang="en" >
 <head>
   <meta charset="utf-8" />
-  <meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-
+  
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
   <title>Install Visual Studio Code &mdash; rockstars setup  documentation</title>
@@ -90,7 +89,8 @@
               <p class="caption"><span class="caption-text">Contents:</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="overview.html">Quick Overview</a></li>
-<li class="toctree-l1"><a class="reference internal" href="overview.html#useful-links">Useful Links</a></li>
+<li class="toctree-l1"><a class="reference internal" href="overview.html#next-steps">Next steps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="overview.html#reference">Reference</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Setting your work environment:</span></p>
 <ul class="current">
@@ -173,75 +173,61 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <section id="install-visual-studio-code">
+  <div class="section" id="install-visual-studio-code">
 <h1>Install Visual Studio Code<a class="headerlink" href="#install-visual-studio-code" title="Permalink to this headline">¶</a></h1>
 <p>Once you have a working ssh connection to your remote server, it is time to configure a more amicable way to work.</p>
 <p>For that, we are going to use Visual Studio Code. The next section is a brief guide on how to do make it works, but <a class="reference external" href="https://code.visualstudio.com/docs/remote/ssh">you can read this link</a> to get more details on how does it work and how to configure it.</p>
-<section id="download-and-install-vs-code">
+<div class="section" id="download-and-install-vs-code">
 <h2>Download and install VS Code<a class="headerlink" href="#download-and-install-vs-code" title="Permalink to this headline">¶</a></h2>
 <p>Look for the last version of <em>VS Code</em>, download and install it in your computer following the instructions in the site.</p>
 <p>After that, open it and install the <em>Remote Development extension pack</em> by going to the “extension icon” highligthed in the image below</p>
-<figure class="align-center" id="id2">
+<div class="figure align-center" id="id2">
 <a class="reference internal image-reference" href="_images/vscode_1.png"><img alt="alt text" src="_images/vscode_1.png" style="width: 409.6px; height: 307.20000000000005px;" /></a>
-<figcaption>
-<p><span class="caption-text">select the extension icon</span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
-</figcaption>
-</figure>
+<p class="caption"><span class="caption-text">select the extension icon</span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
+</div>
 <p>then you will search for the extension named <em>remote</em> in the Marketplace, as shown in the figure below. You need to select and install it.</p>
-<figure class="align-center" id="id3">
+<div class="figure align-center" id="id3">
 <a class="reference internal image-reference" href="_images/vscode_2.png"><img alt="alt text" src="_images/vscode_2.png" style="width: 409.6px; height: 307.20000000000005px;" /></a>
-<figcaption>
-<p><span class="caption-text">install extension remote</span><a class="headerlink" href="#id3" title="Permalink to this image">¶</a></p>
-</figcaption>
-</figure>
-</section>
-<section id="configure-vs-code-for-working-remote">
+<p class="caption"><span class="caption-text">install extension remote</span><a class="headerlink" href="#id3" title="Permalink to this image">¶</a></p>
+</div>
+</div>
+<div class="section" id="configure-vs-code-for-working-remote">
 <h2>Configure VS Code for working remote<a class="headerlink" href="#configure-vs-code-for-working-remote" title="Permalink to this headline">¶</a></h2>
 <p>Once the extension is installed, you need to click over the remote connection icon (1) and then select and click the <em>Connect Current Windows to Host…</em> option (2)</p>
-<figure class="align-center" id="id4">
+<div class="figure align-center" id="id4">
 <a class="reference internal image-reference" href="_images/vscode_4.png"><img alt="alt text" src="_images/vscode_4.png" style="width: 409.6px; height: 307.20000000000005px;" /></a>
-<figcaption>
-<p><span class="caption-text">configure remote server</span><a class="headerlink" href="#id4" title="Permalink to this image">¶</a></p>
-</figcaption>
-</figure>
+<p class="caption"><span class="caption-text">configure remote server</span><a class="headerlink" href="#id4" title="Permalink to this image">¶</a></p>
+</div>
 <p>By doing so you will be asked to enter the remote server credentials that you previously used to connect via PuTTY or Terminal, depending on your system (PC or MAC correspondly).</p>
-<figure class="align-center" id="id5">
+<div class="figure align-center" id="id5">
 <a class="reference internal image-reference" href="_images/vscode_5.png"><img alt="alt text" src="_images/vscode_5.png" style="width: 409.6px; height: 307.20000000000005px;" /></a>
-<figcaption>
-<p><span class="caption-text">enter your remote ssh credentials</span><a class="headerlink" href="#id5" title="Permalink to this image">¶</a></p>
-</figcaption>
-</figure>
-</section>
-</section>
-<section id="upload-publick-key-for-pc">
+<p class="caption"><span class="caption-text">enter your remote ssh credentials</span><a class="headerlink" href="#id5" title="Permalink to this image">¶</a></p>
+</div>
+</div>
+</div>
+<div class="section" id="upload-publick-key-for-pc">
 <h1>Upload Publick Key (for PC)<a class="headerlink" href="#upload-publick-key-for-pc" title="Permalink to this headline">¶</a></h1>
 <p>If you are working over a Mac you already uploaded your public ssh key in a previous step. Hence you should get a successfull connection after you are asked to enter your passphrase.</p>
 <p>Congratulations, you’re all setup! You can <a class="reference internal" href="#celebrate"><span class="std std-ref">celebrate now</span></a>.</p>
-<section id="pc">
+<div class="section" id="pc">
 <h2>PC<a class="headerlink" href="#pc" title="Permalink to this headline">¶</a></h2>
 <blockquote>
 <div><p>If you’re working over a PC you will be asked to enter your remote password to stablish a connection. Enter your password and continue.</p>
-<figure class="align-center" id="id6">
+<div class="figure align-center" id="id6">
 <a class="reference internal image-reference" href="_images/vscode_6.png"><img alt="alt text" src="_images/vscode_6.png" style="width: 410.40000000000003px; height: 307.20000000000005px;" /></a>
-<figcaption>
-<p><span class="caption-text">enter your password</span><a class="headerlink" href="#id6" title="Permalink to this image">¶</a></p>
-</figcaption>
-</figure>
+<p class="caption"><span class="caption-text">enter your password</span><a class="headerlink" href="#id6" title="Permalink to this image">¶</a></p>
+</div>
 </div></blockquote>
 <p>After a few seconds you should get a successfull connection. Visual Studio code could open a unix terminal for you, or not. In the first case, you will see a screen similar to the one shown below.</p>
-<figure class="align-center" id="id7">
+<div class="figure align-center" id="id7">
 <a class="reference internal image-reference" href="_images/vscode_7.png"><img alt="alt text" src="_images/vscode_7.png" style="width: 409.6px; height: 307.20000000000005px;" /></a>
-<figcaption>
-<p><span class="caption-text">enter your remote ssh remote credentials</span><a class="headerlink" href="#id7" title="Permalink to this image">¶</a></p>
-</figcaption>
-</figure>
+<p class="caption"><span class="caption-text">enter your remote ssh remote credentials</span><a class="headerlink" href="#id7" title="Permalink to this image">¶</a></p>
+</div>
 <p>If you <strong>do not see a unix terminal</strong>, but instead you have this screen</p>
-<figure class="align-center" id="id8">
+<div class="figure align-center" id="id8">
 <a class="reference internal image-reference" href="_images/vscode_8.png"><img alt="alt textt" src="_images/vscode_8.png" style="width: 410.40000000000003px; height: 307.20000000000005px;" /></a>
-<figcaption>
-<p><span class="caption-text">there is not a terminal Open</span><a class="headerlink" href="#id8" title="Permalink to this image">¶</a></p>
-</figcaption>
-</figure>
+<p class="caption"><span class="caption-text">there is not a terminal Open</span><a class="headerlink" href="#id8" title="Permalink to this image">¶</a></p>
+</div>
 <p>Then you need to open it manually by going to the menu and select Terminal-&gt;New Terminal.</p>
 <p>Now you will proceed to setup your publick key in the remote server. For that you are going to create a new file named <em>authorized_keys</em>, change the permissions accordingly, edit the file and paste the public key.</p>
 <ul class="simple">
@@ -263,23 +249,21 @@
 </pre></div>
 </div>
 <p id="auth-file">After you enter the last command, you will see that the editor will open an empty file (authorized_keys). You will need to copy and paste the public key that <a class="reference internal" href="installputtyWindows.html#ssh-public-key"><span class="std std-ref">you generate using from PuTTYgen</span></a> in a previou step in the process.</p>
-<figure class="align-center" id="id9">
+<div class="figure align-center" id="id9">
 <a class="reference internal image-reference" href="_images/vscode_9.png"><img alt="alt textt" src="_images/vscode_9.png" style="width: 410.40000000000003px; height: 307.20000000000005px;" /></a>
-<figcaption>
-<p><span class="caption-text">setting up public key file</span><a class="headerlink" href="#id9" title="Permalink to this image">¶</a></p>
-</figcaption>
-</figure>
+<p class="caption"><span class="caption-text">setting up public key file</span><a class="headerlink" href="#id9" title="Permalink to this image">¶</a></p>
+</div>
 <p>save the file and close VS Code. Reopen it and re-stablish a remote connection following the previous steps (click the remote green icon <a class="reference internal" href="_images/remote_icon.png"><img alt="uniquename" src="_images/remote_icon.png" style="width: 20.48px; height: 14.72px;" /></a> located at the left bottom corner and enter your credentials) .</p>
 <p>This time you should not be required to enter a password, but your passphrase for your public key. If everything is OK then you should login and be able to connect remotely.</p>
-</section>
-<section id="celebrate">
+</div>
+<div class="section" id="celebrate">
 <span id="id1"></span><h2>Celebrate !<a class="headerlink" href="#celebrate" title="Permalink to this headline">¶</a></h2>
 <p>Congratulations, you did a good job configuring your remote environment. Now it is time to celebrate!</p>
-<figure class="align-center">
+<div class="figure align-center">
 <a class="reference internal image-reference" href="_images/rockstarslogo.png"><img alt="_images/rockstarslogo.png" src="_images/rockstarslogo.png" style="width: 214.79999999999998px; height: 206.7px;" /></a>
-</figure>
-</section>
-</section>
+</div>
+</div>
+</div>
 
 
            </div>
